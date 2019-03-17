@@ -1,8 +1,14 @@
+@font-face{
+ font-family: Makinas;
+ src: url('./font/Makinas-4-Square.otf') format('opentype');
+}
+
+
 body {
   background: #042022;
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Makinas;
 }
 
 .content-box {
@@ -20,8 +26,8 @@ body {
 .text-box {
   position: absolute;
   top: 50%;
-  left: 10%;
-  right: 10%;
+  left: 6%;
+  right: 6%;
   transform: translate(0, -50%);
   color: #67FFDC;
 }
@@ -29,9 +35,11 @@ body {
 .title {
   border-bottom: 3px solid #67FFDC;
   padding-bottom: 20px;
-  font-size: 40px;
+  font-size: 5rem;
   padding-bottom: 5px;
   margin: 0 0 10px 0;
+  /* text-align: right;
+  letter-spacing: 3; */
 }
 
 .description {
@@ -47,10 +55,11 @@ h1 {
   background: #2A4648;
   display: flex;
   justify-content: space-around;
-  margin-top: -4px;
-  z-index: 1;
+  margin-top: -2px;
+  z-index: 2;
   color: #67FFDC;
   padding: 10px 8% 10px 8%;
+  position: relative;
 }
 .item-box {
   position: relative;
